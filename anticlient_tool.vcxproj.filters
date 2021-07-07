@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\zip_file.cc" />
+    <ClCompile Include="src\directory_iterator.cc" />
+    <ClCompile Include="src\third_party\miniz.c">
+      <Filter>third_party\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\process_iterator.cc" />
+    <ClCompile Include="src\client_data.cc" />
+    <ClCompile Include="src\string_iterator.cc" />
+    <ClCompile Include="src\string_util.cc" />
+    <ClCompile Include="src\gui.cc" />
+    <ClCompile Include="src\third_party\imgui\freetype\imgui_freetype.cpp">
+      <Filter>third_party\imgui\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="src\third_party\imgui\implement\imgui_impl_glfw_gl3.cpp">
+      <Filter>third_party\imgui\implement</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gl3w\GL\gl3w.c">
+      <Filter>third_party\imgui\gl3w</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xray.cc" />
+    <ClCompile Include="src\third_party\imgui\variouscontrol\imguivariouscontrols.cc">
+      <Filter>third_party\imgui\variouscontrols</Filter>
+    </ClCompile>
+    <ClCompile Include="src\checks.cc" />
+    <ClCompile Include="src\coms.cc" />
+    <ClCompile Include="src\main.cc" />
+    <ClCompile Include="src\third_party\fastpbkdf2\fastpbkdf2.cc">
+      <Filter>third_party\fastpbkdf2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_asm_check.cpp" />
+    <ClCompile Include="src\c_pattern_check.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\phnt_headers.h" />
+    <ClInclude Include="src\defer.h" />
+    <ClInclude Include="src\zip_file.h" />
+    <ClInclude Include="src\directory_iterator.h" />
+    <ClInclude Include="src\string_util.h" />
+    <ClInclude Include="src\third_party\miniz.h">
+      <Filter>third_party\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="src\third_party\stb\stb_image.h">
+      <Filter>third_party\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cx_encrypted_string.h" />
+    <ClInclude Include="src\process_iterator.h" />
+    <ClInclude Include="src\client_data.h" />
+    <ClInclude Include="src\string_iterator.h" />
+    <ClInclude Include="src\gui.h" />
+    <ClInclude Include="src\third_party\imgui\freetype\imgui_freetype.h">
+      <Filter>third_party\imgui\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="src\third_party\imgui\implement\imgui_impl_glfw_gl3.h">
+      <Filter>third_party\imgui\implement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xray.h" />
+    <ClInclude Include="src\checks.h" />
+    <ClInclude Include="src\resource\resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\third_party\imgui\variouscontrol\imguivariouscontrols.h">
+      <Filter>third_party\imgui\variouscontrols</Filter>
+    </ClInclude>
+    <ClInclude Include="src\coms.h" />
+    <ClInclude Include="src\obfy.h" />
+    <ClInclude Include="src\third_party\fastpbkdf2\fastpbkdf2.h">
+      <Filter>third_party\fastpbkdf2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asm_check.h" />
+    <ClInclude Include="src\pattern_check.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{bf06f105-7e43-4998-841d-7cd98f05410c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\miniz">
+      <UniqueIdentifier>{f05ad418-8cfa-42a4-b378-a37f5b340fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\stb">
+      <UniqueIdentifier>{4b29fc7d-a085-46bb-9c84-9bb5709dce30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\fastpbkdf2">
+      <UniqueIdentifier>{43624d7b-9f81-42d0-a374-e9a6c0779caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\aes">
+      <UniqueIdentifier>{aeb00281-5c45-4d6a-bc35-c94b734480a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui">
+      <UniqueIdentifier>{bee7a6d0-2f90-4d34-9712-95a1937c1cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui\freetype">
+      <UniqueIdentifier>{38664189-6580-4504-bdfc-6d432ccd7da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui\implement">
+      <UniqueIdentifier>{29708036-842d-4177-b802-436e6c5d8739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui\gl3w">
+      <UniqueIdentifier>{24044631-d609-4167-9eaf-1308d8047c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui\variouscontrols">
+      <UniqueIdentifier>{1e09b3a3-d9cc-4335-ad6c-cfd3edce07b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{e5a488bc-2517-4993-b9f3-dcd925deea92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MARMASM Include="src\syscalls.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\resource\wallpaper.png" />
+    <Image Include="src\resource\logo.png" />
+    <Image Include="src\resource\loading.gif" />
+    <Image Include="src\resource\checkmark.png" />
+    <Image Include="src\resource\login-screen.png" />
+    <Image Include="src\resource\key-logo.png" />
+    <Image Include="src\resource\error-icon.png" />
+    <Image Include="src\resource\warning-icon.png" />
+    <Image Include="src\resource\logo.ico" />
+    <Image Include="src\assets\warning-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="src\resource\Helvetica-Regular.ttf" />
+    <Font Include="src\resource\Helvetica-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\resource\binary1.bin" />
+  </ItemGroup>
+</Project>

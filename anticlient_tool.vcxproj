@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D0D746C1-9F1D-4050-86B1-1F5562947993}</ProjectGuid>
+    <RootNamespace>anticlienttool</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\int\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\cryptopp\include\;$(SolutionDir)include\phnt\;E:\Libraries\openssl-1.0.2o\_build\$(Configuration)\include\;C:\local\boost_1_67_0\;$(SolutionDir)include\nlohmann\;C:\local\boost_1_67_0\boost\;%(AdditionalIncludeDirectories);$(SolutionDir)include\imgui\include;$(SolutionDir)include\imgui\freetype\include;$(SolutionDir)include\imgui\src;$(SolutionDir)include\glfw\include;$(SolutionDir)include\gl3w;$(SolutionDir)include\vmprotect\;$(SolutionDir)third_party\themida\;$(SolutionDir)include\themida\;A:\lib\boost_1_67_0\;A:\lib\openssl-1.0.2o\_build\$(Configuration)\include\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>A:\lib\openssl-1.0.2o\_build\$(Configuration)\lib\;A:\lib\boost_1_67_0\lib64-msvc-14.1\;$(SolutionDir)include\cryptopp\lib\$(Configuration)\;$(SolutionDir)include\imgui\lib\x64\imgui;$(SolutionDir)include\glfw\x64;$(SolutionDir)include\imgui\freetype\lib\x64;$(SolutionDir)include\vmprotect\lib\;$(SolutionDir)include\themida\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\cryptopp\include\;$(SolutionDir)include\phnt\;E:\Libraries\openssl-1.0.2o\_build\$(Configuration)\include\;C:\local\boost_1_67_0\;$(SolutionDir)include\nlohmann\;C:\local\boost_1_67_0\boost\;%(AdditionalIncludeDirectories);$(SolutionDir)include\imgui\include;$(SolutionDir)include\imgui\freetype\include;$(SolutionDir)include\imgui\src;$(SolutionDir)include\glfw\include;$(SolutionDir)include\gl3w;$(SolutionDir)include\vmprotect\;$(SolutionDir)third_party\themida\;$(SolutionDir)include\themida\;A:\lib\boost_1_67_0\;A:\lib\openssl-1.0.2o\_build\$(Configuration)\include\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>A:\lib\openssl-1.0.2o\_build\$(Configuration)\lib\;A:\lib\boost_1_67_0\lib64-msvc-14.1\;$(SolutionDir)include\cryptopp\lib\$(Configuration)\;$(SolutionDir)include\imgui\lib\x64\imgui;$(SolutionDir)include\glfw\x64;$(SolutionDir)include\imgui\freetype\lib\x64;$(SolutionDir)include\vmprotect\lib\;$(SolutionDir)include\themida\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <Version>
+      </Version>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\assets\</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\cryptopp\include\;$(SolutionDir)include\phnt\;E:\Libraries\openssl-1.0.2o\_build\$(Configuration)\include\;C:\local\boost_1_66_0\lib64-msvc-14.1\;C:\local\boost_1_66_0;%(AdditionalIncludeDirectories);$(SolutionDir)include\imgui\include;$(SolutionDir)include\imgui\freetype\include;$(SolutionDir)include\imgui\src;$(SolutionDir)include\glfw\include;$(SolutionDir)include\gl3w;$(SolutionDir)include\vmprotect\;$(SolutionDir)third_party\themida\;$(SolutionDir)include\themida\;A:\lib\boost_1_67_0\;A:\lib\openssl-1.0.2o\_build\$(Configuration)\include\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>A:\lib\openssl-1.0.2o\_build\$(Configuration)\lib\;A:\lib\boost_1_67_0\lib64-msvc-14.1\;$(SolutionDir)include\cryptopp\lib\$(Configuration)\;$(SolutionDir)include\imgui\lib\x64\imgui;$(SolutionDir)include\glfw\x64;$(SolutionDir)include\imgui\freetype\lib\x64;$(SolutionDir)include\vmprotect\lib\;$(SolutionDir)include\themida\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\cryptopp\include\;$(SolutionDir)include\phnt\;E:\Libraries\openssl-1.0.2o\_build\$(Configuration)\include\;C:\local\boost_1_67_0\;$(SolutionDir)include\nlohmann\;C:\local\boost_1_67_0\boost\;%(AdditionalIncludeDirectories);$(SolutionDir)include\imgui\include;$(SolutionDir)include\imgui\freetype\include;$(SolutionDir)include\imgui\src;$(SolutionDir)include\glfw\include;$(SolutionDir)include\gl3w;$(SolutionDir)include\vmprotect\;$(SolutionDir)third_party\themida\;$(SolutionDir)include\themida\;A:\lib\boost_1_67_0\;A:\lib\openssl-1.0.2o\_build\$(Configuration)\include\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName)</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>A:\lib\openssl-1.0.2o\_build\$(Configuration)\lib\;A:\lib\boost_1_67_0\lib64-msvc-14.1\;$(SolutionDir)include\cryptopp\lib\$(Configuration)\;$(SolutionDir)include\imgui\lib\x64\imgui;$(SolutionDir)include\glfw\x64;$(SolutionDir)include\imgui\freetype\lib\x64;$(SolutionDir)include\vmprotect\lib\;$(SolutionDir)include\themida\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <Version>
+      </Version>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\assets\</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\c_asm_check.cpp" />
+    <ClCompile Include="src\c_pattern_check.cpp" />
+    <ClCompile Include="include\gl3w\GL\gl3w.c" />
+    <ClCompile Include="src\checks.cc" />
+    <ClCompile Include="src\coms.cc" />
+    <ClCompile Include="src\client_data.cc" />
+    <ClCompile Include="src\directory_iterator.cc" />
+    <ClCompile Include="src\gui.cc" />
+    <ClCompile Include="src\main.cc" />
+    <ClCompile Include="src\process_iterator.cc" />
+    <ClCompile Include="src\string_iterator.cc" />
+    <ClCompile Include="src\string_util.cc" />
+    <ClCompile Include="src\third_party\fastpbkdf2\fastpbkdf2.cc" />
+    <ClCompile Include="src\third_party\imgui\freetype\imgui_freetype.cpp" />
+    <ClCompile Include="src\third_party\imgui\implement\imgui_impl_glfw_gl3.cpp" />
+    <ClCompile Include="src\third_party\imgui\variouscontrol\imguivariouscontrols.cc" />
+    <ClCompile Include="src\third_party\miniz.c" />
+    <ClCompile Include="src\xray.cc" />
+    <ClCompile Include="src\zip_file.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\asm_check.h" />
+    <ClInclude Include="src\pattern_check.h" />
+    <ClInclude Include="src\checks.h" />
+    <ClInclude Include="src\client_data.h" />
+    <ClInclude Include="src\coms.h" />
+    <ClInclude Include="src\cx_encrypted_string.h" />
+    <ClInclude Include="src\defer.h" />
+    <ClInclude Include="src\directory_iterator.h" />
+    <ClInclude Include="src\gui.h" />
+    <ClInclude Include="src\obfy.h" />
+    <ClInclude Include="src\phnt_headers.h" />
+    <ClInclude Include="src\process_iterator.h" />
+    <ClInclude Include="src\resource\resource.h" />
+    <ClInclude Include="src\string_iterator.h" />
+    <ClInclude Include="src\string_util.h" />
+    <ClInclude Include="src\third_party\fastpbkdf2\fastpbkdf2.h" />
+    <ClInclude Include="src\third_party\imgui\freetype\imgui_freetype.h" />
+    <ClInclude Include="src\third_party\imgui\implement\imgui_impl_glfw_gl3.h" />
+    <ClInclude Include="src\third_party\imgui\variouscontrol\imguivariouscontrols.h" />
+    <ClInclude Include="src\third_party\miniz.h" />
+    <ClInclude Include="src\third_party\stb\stb_image.h" />
+    <ClInclude Include="src\xray.h" />
+    <ClInclude Include="src\zip_file.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="include\imgui\imgui.vcxproj">
+      <Project>{7db1f543-5328-45f9-ae40-af05e7b943f4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MARMASM Include="src\syscalls.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\assets\warning-icon.png" />
+    <Image Include="src\resource\checkmark.png" />
+    <Image Include="src\resource\error-icon.png" />
+    <Image Include="src\resource\key-logo.png" />
+    <Image Include="src\resource\loading.gif" />
+    <Image Include="src\resource\login-screen.png" />
+    <Image Include="src\resource\logo.ico" />
+    <Image Include="src\resource\logo.png" />
+    <Image Include="src\resource\wallpaper.png" />
+    <Image Include="src\resource\warning-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="src\resource\Helvetica-Bold.ttf" />
+    <Font Include="src\resource\Helvetica-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\resource\binary1.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
